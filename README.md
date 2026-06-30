@@ -10,11 +10,19 @@
   </a>
 </div>
 
+<!-- ░▒▓ HI WAVE ▓▒░ -->
+<h1 align="center">
+  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="32"/>
+  Hey, I'm Dhanush
+</h1>
+
 <!-- ░▒▓ TOP BADGES ▓▒░ -->
 <div align="center">
   <img src="https://img.shields.io/badge/Location-Bangalore%2C+India-00ff41?style=for-the-badge&logo=googlemaps&logoColor=white&labelColor=0d1117"/>
   <img src="https://img.shields.io/badge/Role-Intern+Seeking-ff006e?style=for-the-badge&logo=briefcase&logoColor=white&labelColor=0d1117"/>
+  <img src="https://img.shields.io/badge/Focus-AI+%C2%B7+Security-00ffff?style=for-the-badge&logo=anthropic&logoColor=white&labelColor=0d1117"/>
   <img src="https://komarev.com/ghpvc/?username=Dhanush-Aries&label=Profile+Views&color=00ffff&style=for-the-badge"/>
+  <a href="https://github.com/Dhanush-Aries?tab=followers"><img src="https://img.shields.io/github/followers/Dhanush-Aries?label=Followers&style=for-the-badge&color=ff006e&labelColor=0d1117"/></a>
 </div>
 
 <br/>
@@ -22,14 +30,66 @@
 <!-- ░▒▓ ABOUT ▓▒░ -->
 <h2 align="center">🧠 &nbsp;About me</h2>
 
+<table>
+<tr>
+<td width="60%" valign="top">
+
 Final-year **B.Tech CSE** at **GITAM Bangalore**. I ship daily with **Claude Code**, the **Anthropic Agent SDK**, and **Model Context Protocol (MCP)** — building at the seam between **AI agents** and **offensive security**.
 
-- 🛠️ Currently building [**Jarvis**](https://github.com/Dhanush-Aries/jarvis) — a portable multi-provider AI assistant with CLI, web, voice, and daemon interfaces
+- 🛠️ Currently building [**Jarvis**](https://github.com/Dhanush-Aries/jarvis) — a portable multi-provider AI assistant
 - 🛡️ Active on **TryHackMe**, **HackTheBox**, **PortSwigger Web Security Academy**
 - 🎓 **EC-Council EHE certified** · Cisco NetAcad Ethical Hacker
-- 🌱 Contributor to the **Claude Code skills** and **MCP server** ecosystem
+- 🌱 Contributing to the **Claude Code skills** and **MCP server** ecosystem
 - 💼 Open to internships in **AI engineering**, **AI security**, and **penetration testing**
-- 📫 Reach me — **danushankar3@gmail.com**
+- 📫 **danushankar3@gmail.com**
+- ⚡ Fun fact — my home lab runs more agents than my Apple ID has devices
+
+</td>
+<td width="40%" align="center" valign="top">
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Dhanush-Aries&theme=radical" width="100%" alt="profile-summary"/>
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<!-- ░▒▓ FEATURED PROJECTS ▓▒░ -->
+<h2 align="center">🚀 &nbsp;Featured projects</h2>
+
+<p align="center">
+  <a href="https://github.com/Dhanush-Aries/jarvis">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Dhanush-Aries&repo=jarvis&theme=radical&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FFFF&text_color=ffffff" width="48%" alt="jarvis"/>
+  </a>
+  <a href="https://github.com/Dhanush-Aries/claude-code-skills">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Dhanush-Aries&repo=claude-code-skills&theme=radical&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FFFF&text_color=ffffff" width="48%" alt="claude-code-skills"/>
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/Dhanush-Aries/breachintel">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Dhanush-Aries&repo=breachintel&theme=radical&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FFFF&text_color=ffffff" width="48%" alt="breachintel"/>
+  </a>
+  <a href="https://github.com/Dhanush-Aries/cve-advisor">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Dhanush-Aries&repo=cve-advisor&theme=radical&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FFFF&text_color=ffffff" width="48%" alt="cve-advisor"/>
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/Dhanush-Aries/computer-use-agent">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Dhanush-Aries&repo=computer-use-agent&theme=radical&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FFFF&text_color=ffffff" width="48%" alt="computer-use-agent"/>
+  </a>
+  <a href="https://github.com/Dhanush-Aries/autonomous-coding-agent">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Dhanush-Aries&repo=autonomous-coding-agent&theme=radical&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FFFF&text_color=ffffff" width="48%" alt="autonomous-coding-agent"/>
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/Dhanush-Aries/customer-support-agent">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Dhanush-Aries&repo=customer-support-agent&theme=radical&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FFFF&text_color=ffffff" width="48%" alt="customer-support-agent"/>
+  </a>
+  <a href="https://github.com/Dhanush-Aries/financial-data-analyst">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Dhanush-Aries&repo=financial-data-analyst&theme=radical&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FFFF&text_color=ffffff" width="48%" alt="financial-data-analyst"/>
+  </a>
+</p>
 
 <br/>
 
@@ -84,6 +144,14 @@ Final-year **B.Tech CSE** at **GITAM Bangalore**. I ship daily with **Claude Cod
   <img src="https://github-profile-trophy.vercel.app/?username=Dhanush-Aries&theme=radical&no-frame=true&no-bg=true&column=4&row=2&margin-w=10&margin-h=10" height="180" alt="trophies"/>
 </div>
 
+<!-- ░▒▓ SUMMARY CARDS ▓▒░ -->
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Dhanush-Aries&theme=radical" height="180" alt="repos-per-language"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Dhanush-Aries&theme=radical" height="180" alt="most-commit-language"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Dhanush-Aries&theme=radical" height="180" alt="stats-card"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Dhanush-Aries&theme=radical&utcOffset=5.5" height="180" alt="productive-time"/>
+</div>
+
 <br/>
 
 <!-- ░▒▓ ACTIVITY GRAPH ▓▒░ -->
@@ -103,21 +171,6 @@ Final-year **B.Tech CSE** at **GITAM Bangalore**. I ship daily with **Claude Cod
     <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/Dhanush-Aries/Dhanush-Aries/output/github-contribution-grid-snake.svg"/>
   </picture>
 </div>
-
-<br/>
-
-<!-- ░▒▓ PROJECTS ▓▒░ -->
-<h2 align="center">🚀 &nbsp;Featured projects</h2>
-
-| Project | What it does |
-|---|---|
-| [**jarvis**](https://github.com/Dhanush-Aries/jarvis) ⚡ | Portable AI assistant — one core, four interfaces (CLI / web / voice / daemon). 6-provider router with auto-fallback. Zero-API-key mode via Claude Max **or** local Ollama. |
-| [**breachintel**](https://github.com/Dhanush-Aries/breachintel) 🕵️ | All-source OSINT terminal. 14 breach / ransomware / dark-web feeds behind one FastAPI server. 10-tab web GUI with Leaflet geo-maps + vis-network relationship graphs. |
-| [**cve-advisor**](https://github.com/Dhanush-Aries/cve-advisor) 🛡️ | FastAPI service mapping any CVE to a Claude-written triage report — attack surface, exploitability, remediation. NVD 2.0 + Exploit-DB + sandboxed Docker analyst labs. |
-| [**customer-support-agent**](https://github.com/Dhanush-Aries/customer-support-agent) 💬 | Next.js 14 streaming support chat. 10-article RAG with citations, 3-class mood detector, ephemeral prompt caching. |
-| [**autonomous-coding-agent**](https://github.com/Dhanush-Aries/autonomous-coding-agent) 🤖 | Two-agent autonomous coder — Initializer plans a JSON task graph, Coder executes via tool-use loop. Resumable state on every step. |
-| [**computer-use-agent**](https://github.com/Dhanush-Aries/computer-use-agent) 🖥️ | Claude computer-use agent driving a sandboxed virtual desktop. Streamlit UI + VNC viewer + Docker isolation. |
-| [**claude-code-skills**](https://github.com/Dhanush-Aries/claude-code-skills) 🧰 | Curated collection of 35 Claude Code skills for AI engineering, agent development, and offensive security. Skill / agent factories, LLM routing, OWASP review, dev-velocity tools. |
 
 <br/>
 
@@ -144,6 +197,8 @@ Final-year **B.Tech CSE** at **GITAM Bangalore**. I ship daily with **Claude Cod
   <a href="mailto:danushankar3@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
   <a href="https://linkedin.com/in/dhanush-shankar"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="https://github.com/Dhanush-Aries"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+  <a href="https://tryhackme.com"><img src="https://img.shields.io/badge/TryHackMe-212C42?style=for-the-badge&logo=tryhackme&logoColor=88CC14"/></a>
+  <a href="https://hackthebox.com"><img src="https://img.shields.io/badge/Hack_The_Box-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black"/></a>
 </div>
 
 <br/>
