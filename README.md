@@ -2,13 +2,17 @@
 
 ### `danush-aries`
 
-<sub>Dhanush Shankar · Bangalore · Full-stack agent engineer</sub>
+<sub>Dhanush Shankar · Bangalore · AI & Security Engineer</sub>
 
 <br />
 
 <a href="https://github.com/Danush-Aries">
   <img src="https://readme-typing-svg.demolab.com/?lines=I+build+the+AI.+I+break+the+AI.+I+ship+with+the+AI.&font=JetBrains+Mono&size=17&pause=1800&color=E8A24C&center=true&vCenter=true&width=680&height=32" alt="tagline" />
 </a>
+
+<br />
+
+![Profile views](https://komarev.com/ghpvc/?username=Danush-Aries&color=E8A24C&abbreviated=true&style=flat-square&label=profile+views)
 
 </div>
 
@@ -52,6 +56,9 @@ Burp Suite · Nmap · Wireshark · Metasploit · Shodan · Kali · OWASP LLM Top
 </a>
 <a href="https://git.io/streak-stats">
   <img height="160" src="https://streak-stats.demolab.com?user=Danush-Aries&hide_border=true&background=0D1117&stroke=E8A24C&ring=E8A24C&fire=E8A24C&currStreakLabel=E8A24C&sideLabels=8b8b93&dates=8b8b93&currStreakNum=c9d1d9&sideNums=c9d1d9" />
+</a>
+<a href="https://github.com/Danush-Aries?tab=repositories">
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Danush-Aries&layout=compact&hide_border=true&title_color=E8A24C&text_color=c9d1d9&bg_color=0d1117&langs_count=8" />
 </a>
 
 <br />
