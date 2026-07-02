@@ -43,9 +43,11 @@ More on the [repositories tab](https://github.com/Danush-Aries?tab=repositories)
 
 ### Stack
 
-Python · TypeScript · Next.js 14 App Router · FastAPI · Docker · Playwright · Linux · Bash
-Claude Agent SDK · MCP · Ollama · LangChain · RAG · prompt caching · extended thinking
-Burp Suite · Nmap · Wireshark · Metasploit · Shodan · Kali · OWASP LLM Top 10 · MITRE ATT&CK
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,typescript,javascript,react,nextjs,nodejs,fastapi,docker,git,githubactions,linux,bash,pytorch&theme=dark" alt="stack" />
+</p>
+
+<sub>**AI / LLM** — Claude Agent SDK · MCP · Ollama · LangChain · RAG · prompt caching · extended thinking<br />**Security** — Burp Suite · Nmap · Wireshark · Metasploit · Shodan · Kali · OWASP LLM Top 10 · MITRE ATT&CK</sub>
 
 ---
 
