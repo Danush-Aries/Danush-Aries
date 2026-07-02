@@ -16,9 +16,9 @@
 
 I'm a final-year B.Tech CSE student who spends every hour outside class **designing agents that do things in the real world** — read files, drive browsers, triage CVEs, run desktops, defend LLMs from themselves. I work with **Claude Code + MCP** the way most people work with an IDE. Five solo AI products live, zero job history, one very active `~/.claude/` folder.
 
-Open to internships in **AI · LLM/Agent Engineering · AI Security · Red Team · Applied AI**.
+Open to **internships & entry-level roles** in **AI/ML · LLM & Agent Engineering · AI Security / Red Team · Full-Stack Development**.
 
-📫 **danushankar3@gmail.com** · [LinkedIn](https://linkedin.com/in/dhanush-shankar) · [Twitter/X](https://x.com/danushankar3) *(intern applications warmly received)*
+📫 **danushankar3@gmail.com** · [LinkedIn](https://linkedin.com/in/dhanush-shankar-u) · [Twitter/X](https://x.com/danushankar3) · [HackerRank](https://hackerrank.com/danushankar3) *(internship & new-grad applications warmly received)*
 
 ---
 
@@ -71,4 +71,4 @@ Burp Suite · Nmap · Wireshark · Metasploit · Shodan · Kali · OWASP LLM Top
 
 ---
 
-<sub>EC-Council EHE · Cisco NetAcad Ethical Hacker · daily on TryHackMe / HackTheBox / PortSwigger.</sub>
+<sub>EC-Council EHE · Cisco NetAcad Ethical Hacker · AWS Cloud Computing — MNNIT Prayagraj hackathon (2026) · daily on TryHackMe / HackTheBox / PortSwigger.</sub>
