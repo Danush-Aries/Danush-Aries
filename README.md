@@ -1,8 +1,8 @@
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=E8A24C&height=170&section=header&text=Dhanush%20Shankar&fontColor=0d1117&fontSize=52&fontAlignY=40&desc=AI%20%26%20Security%20Engineer&descSize=18&descAlignY=62&animation=fadeIn" alt="header banner" />
+
 <div align="center">
 
-### `danush-aries`
-
-<sub>Dhanush Shankar · Bangalore · AI & Security Engineer</sub>
+<sub>Bangalore, India · open to internships & entry-level roles</sub>
 
 <br />
 
@@ -81,3 +81,5 @@ More on the [repositories tab](https://github.com/Danush-Aries?tab=repositories)
 ---
 
 <sub>EC-Council EHE · Cisco NetAcad Ethical Hacker · AWS Cloud Computing — MNNIT Prayagraj hackathon (2026) · daily on TryHackMe / HackTheBox / PortSwigger.</sub>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=E8A24C&height=90&section=footer" alt="footer banner" />
