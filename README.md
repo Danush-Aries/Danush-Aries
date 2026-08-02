@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<sub>Bangalore, India · open to internships & entry-level roles</sub>
+<sub>Bangalore, India · open to internships & entry-level roles · responding within 24h</sub>
 
 <br />
 
@@ -12,17 +12,27 @@
 
 <br />
 
-![Profile views](https://komarev.com/ghpvc/?username=Danush-Aries&color=E8A24C&abbreviated=true&style=flat-square&label=profile+views)
+[![License](https://img.shields.io/github/license/Danush-Aries/Danush-Aries?style=flat-square&color=E8A24C)](LICENSE)
+[![Repos](https://img.shields.io/badge/60%2B%20open--source%20repos-0d1117?style=flat-square&color=0d1117&labelColor=30363d)](https://github.com/Danush-Aries?tab=repositories)
+[![Python](https://img.shields.io/badge/Python-3.12-0d1117?style=flat-square&labelColor=30363d)](https://github.com/Danush-Aries?tab=repositories)
+[![MCP](https://img.shields.io/badge/Model%20Context%20Protocol-shipping-0d1117?style=flat-square&color=0d1117&labelColor=30363d)](https://github.com/Danush-Aries?tab=repositories)
+[![EC-Council](https://img.shields.io/badge/EC--Council%20EHE-certified-0d1117?style=flat-square&color=0d1117&labelColor=30363d)](https://www.eccouncil.org)
+[![Cisco](https://img.shields.io/badge/Cisco%20NetAcad-Ethical%20Hacking-0d1117?style=flat-square&color=0d1117&labelColor=30363d)](https://www.netacad.com)
+[![AWS](https://img.shields.io/badge/AWS%20Cloud-Computing%20(MNNIT)-0d1117?style=flat-square&color=0d1117&labelColor=30363d)](https://aws.amazon.com/certification)
+
+<br />
+
+[![Profile views](https://komarev.com/ghpvc/?username=Danush-Aries&color=E8A24C&abbreviated=true&style=flat-square&label=profile+views)](https://github.com/Danush-Aries)
 
 </div>
 
 ---
 
-I'm a final-year B.Tech CSE student who spends every hour outside class **designing agents that do things in the real world** — read files, drive browsers, triage CVEs, run desktops, defend LLMs from themselves. I work with **Claude Code + MCP** the way most people work with an IDE. Five solo AI products live, zero job history, one very active `~/.claude/` folder.
+I'm a final-year B.Tech CSE student who spends every hour outside class **designing agents that do things in the real world** — read files, drive browsers, triage CVEs, run desktops, defend LLMs from themselves. I work with **Claude Code + MCP** the way most people work with an IDE. **60+ open-source repos shipped**, focused on **AI/ML engineering, LLM security, and full-stack tooling**.
 
 Open to **internships & entry-level roles** in **AI/ML · LLM & Agent Engineering · AI Security / Red Team · Full-Stack Development**.
 
-📫 **danushankar3@gmail.com** · [LinkedIn](https://linkedin.com/in/dhanush-shankar-u) · [Twitter/X](https://x.com/danushankar3) · [HackerRank](https://hackerrank.com/danushankar3) *(internship & new-grad applications warmly received)*
+📫 **danushankar3@gmail.com** · [LinkedIn](https://linkedin.com/in/dhanush-shankar-u) · [Twitter/X](https://x.com/danushankar3) · [HackerRank](https://hackerrank.com/danushankar3) — *internship & new-grad applications warmly received*
 
 ---
 
@@ -30,14 +40,14 @@ Open to **internships & entry-level roles** in **AI/ML · LLM & Agent Engineerin
 
 | Repo | What it does |
 |---|---|
-| **[jarvis](https://github.com/Danush-Aries/jarvis)** | Portable multi-provider AI assistant — voice + web + CLI + macOS daemon. 6 LLM backends w/ auto-fallback, zero-API-key mode via Claude Max, 4 specialised sub-agents. |
-| **[breachintel](https://github.com/Danush-Aries/breachintel)** | All-source OSINT terminal. 14 feeds behind one FastAPI, 18 endpoints, 10-tab military-styled GUI, live ransomware + dark-web monitor. ~4.2k LOC. |
-| **[cve-advisor](https://github.com/Danush-Aries/cve-advisor)** | LLM-driven CVE triage. Any CVE ID → a Claude-authored report over NVD 2.0 + Exploit-DB. Hardened Docker sandbox, 20 async tests. |
-| **[llm-fragility-lab](https://github.com/Danush-Aries/llm-fragility-lab)** | Adversarial LLM testing — probes for jailbreaks, hallucinations, prompt-injection failure modes. |
+| **[jarvis](https://github.com/Danush-Aries/jarvis)** | Portable multi-provider AI assistant — voice + web + CLI + macOS daemon. **6 LLM backends** w/ auto-fallback, zero-API-key mode, 4 specialised sub-agents. |
+| **[breachintel](https://github.com/Danush-Aries/breachintel)** | All-source OSINT terminal. **14 feeds** behind one FastAPI, **18 endpoints**, 10-tab GUI, live ransomware + dark-web monitor. |
+| **[cve-advisor](https://github.com/Danush-Aries/cve-advisor)** | LLM-driven CVE triage — any CVE ID → analyst-ready report over NVD 2.0 + Exploit-DB. Hardened Docker sandbox, **20 async tests**. |
+| **[promptdiff](https://github.com/Danush-Aries/promptdiff)** | pytest for LLM prompts — catches silent output regressions **in CI**, offline-first with VCR-style replay. |
 | **[computer-use-agent](https://github.com/Danush-Aries/computer-use-agent)** | Claude driving a Dockerized Ubuntu+Xvfb+VNC desktop. Screenshot → plan → act loop, trajectory recording. |
-| **[customer-support-agent](https://github.com/Danush-Aries/customer-support-agent)** | Production Next.js 14 chat over a RAG KB. Inline citations, mood detection, prompt caching, extended thinking streamed to UI. |
+| **[mcp-sentinel](https://github.com/Danush-Aries/mcp-sentinel)** | Static security linter for MCP ecosystems — tool poisoning, leaked secrets, supply-chain risk, SARIF-native CI. |
 
-More on the [repositories tab](https://github.com/Danush-Aries?tab=repositories) — SAST scanner, network intrusion analyzer, leak monitors, agent frameworks, edge-AI robotics, encrypted chat, and a curated collection of [Claude Code skills](https://github.com/Danush-Aries/claude-code-skills).
+More on the [repositories tab](https://github.com/Danush-Aries?tab=repositories) — SAST scanner, prompt-injection lab, leak monitors, agent frameworks, edge-AI robotics, and a curated [Claude Code skills collection](https://github.com/Danush-Aries/claude-code-skills).
 
 ---
 
@@ -47,36 +57,26 @@ More on the [repositories tab](https://github.com/Danush-Aries?tab=repositories)
   <img src="https://skillicons.dev/icons?i=python,typescript,javascript,react,nextjs,nodejs,fastapi,docker,git,githubactions,linux,bash,pytorch&theme=dark" alt="stack" />
 </p>
 
-<sub>**AI / LLM** — Claude Agent SDK · MCP · Ollama · LangChain · RAG · prompt caching · extended thinking<br />**Security** — Burp Suite · Nmap · Wireshark · Metasploit · Shodan · Kali · OWASP LLM Top 10 · MITRE ATT&CK</sub>
+<sub>**AI / LLM** — Claude Agent SDK · MCP · Ollama · LangChain · RAG · prompt caching<br />**Security** — Burp Suite · Nmap · Wireshark · Metasploit · Shodan · Kali · OWASP LLM Top 10 · MITRE ATT&CK</sub>
 
 ---
 
+### Now — shipping this month
+
+- **Two portfolio sites** — a Three.js/R3F 3D experience, an editorial-minimal build. Live soon.
+- **LLM red-team harness** — indirect prompt-injection probes, adding to [`llm-fragility-lab`](https://github.com/Danush-Aries/llm-fragility-lab).
+- **CTF recon MCP** — `subfinder → httpx → nuclei` chained behind a single Claude Code tool.
+- **Agentic CVE pipeline** — scrape → triage → brief, running as a GitHub Action every 6h.
+
 <div align="center">
 
-<a href="https://github.com/Danush-Aries">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=Danush-Aries&show_icons=true&count_private=true&hide_border=true&title_color=E8A24C&icon_color=E8A24C&text_color=c9d1d9&bg_color=0d1117&hide=issues,contribs" />
-</a>
-<a href="https://git.io/streak-stats">
-  <img height="160" src="https://streak-stats.demolab.com?user=Danush-Aries&hide_border=true&background=0D1117&stroke=E8A24C&ring=E8A24C&fire=E8A24C&currStreakLabel=E8A24C&sideLabels=8b8b93&dates=8b8b93&currStreakNum=c9d1d9&sideNums=c9d1d9" />
-</a>
-<a href="https://github.com/Danush-Aries?tab=repositories">
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Danush-Aries&layout=compact&hide_border=true&title_color=E8A24C&text_color=c9d1d9&bg_color=0d1117&langs_count=8" />
-</a>
+<img height="160" src="https://github-readme-stats.vercel.app/api?username=Danush-Aries&show_icons=true&count_private=true&hide_border=true&title_color=E8A24C&icon_color=E8A24C&text_color=c9d1d9&bg_color=0d1117&hide=issues,contribs" alt="GitHub stats" />
 
 <br />
 
 <img src="https://raw.githubusercontent.com/Danush-Aries/Danush-Aries/output/github-contribution-grid-snake-dark.svg" alt="contribution snake" />
 
 </div>
-
----
-
-### `now` — shipping this month
-
-- **Two portfolio sites** — one Three.js/R3F 3D experience, one editorial-minimal build. Live soon.
-- **LLM red-team harness** — indirect prompt-injection probes, adds to [`llm-fragility-lab`](https://github.com/Danush-Aries/llm-fragility-lab).
-- **CTF recon MCP** — `subfinder → httpx → nuclei` chained behind a single Claude Code tool.
-- **Bug-bounty writeup skill** — one-shot writeups from a raw request/response pair.
 
 ---
 
