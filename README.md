@@ -77,6 +77,12 @@ More on the [repositories tab](https://github.com/Danush-Aries?tab=repositories)
 
 <br />
 
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/Danush-Aries/Danush-Aries/main/github-metrics.svg" alt="Metrics" />
+
+</div>
+
 <img src="https://raw.githubusercontent.com/Danush-Aries/Danush-Aries/output/github-contribution-grid-snake-dark.svg" alt="contribution snake" />
 
 </div>
