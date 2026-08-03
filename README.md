@@ -38,14 +38,16 @@ Open to **internships & entry-level roles** in **AI/ML · LLM & Agent Engineerin
 
 ### Selected work
 
-| Repo | What it does |
-|---|---|
-| **[jarvis](https://github.com/Danush-Aries/jarvis)** | Portable multi-provider AI assistant — voice + web + CLI + macOS daemon. **6 LLM backends** w/ auto-fallback, zero-API-key mode, 4 specialised sub-agents. |
-| **[breachintel](https://github.com/Danush-Aries/breachintel)** | All-source OSINT terminal. **14 feeds** behind one FastAPI, **18 endpoints**, 10-tab GUI, live ransomware + dark-web monitor. |
-| **[cve-advisor](https://github.com/Danush-Aries/cve-advisor)** | LLM-driven CVE triage — any CVE ID → analyst-ready report over NVD 2.0 + Exploit-DB. Hardened Docker sandbox, **20 async tests**. |
-| **[promptdiff](https://github.com/Danush-Aries/promptdiff)** | pytest for LLM prompts — catches silent output regressions **in CI**, offline-first with VCR-style replay. |
-| **[computer-use-agent](https://github.com/Danush-Aries/computer-use-agent)** | Claude driving a Dockerized Ubuntu+Xvfb+VNC desktop. Screenshot → plan → act loop, trajectory recording. |
-| **[mcp-sentinel](https://github.com/Danush-Aries/mcp-sentinel)** | Static security linter for MCP ecosystems — tool poisoning, leaked secrets, supply-chain risk, SARIF-native CI. |
+| Repo | What it does | CI |
+|---|---|---|
+| **[jarvis](https://github.com/Danush-Aries/jarvis)** | Portable multi-provider AI assistant — voice + web + CLI + macOS daemon. **6 LLM backends** w/ auto-fallback, zero-API-key mode, 4 specialised sub-agents. | — |
+| **[breachintel](https://github.com/Danush-Aries/breachintel)** | All-source OSINT terminal. **14 feeds** behind one FastAPI, **18 endpoints**, 10-tab GUI, live ransomware + dark-web monitor. | — |
+| **[cve-advisor](https://github.com/Danush-Aries/cve-advisor)** | LLM-driven CVE triage — any CVE ID → analyst-ready report over NVD 2.0 + Exploit-DB. Hardened Docker sandbox, **20 async tests**. | — |
+| **[praetor](https://github.com/Danush-Aries/praetor)** | Governed autonomous pentest orchestrator — recon→scan→exploit→report with a hard scope gate, audit trail, MITRE+Sigma blue-team mirror. | [![CI](https://img.shields.io/github/actions/workflow/status/Danush-Aries/praetor/ci.yml?branch=main&label=CI&color=E8A24C&style=flat-square&logo=github)](https://github.com/Danush-Aries/praetor/actions) |
+| **[promptdiff](https://github.com/Danush-Aries/promptdiff)** | pytest for LLM prompts — catches silent output regressions **in CI**, offline-first with VCR-style replay. | [![CI](https://img.shields.io/github/actions/workflow/status/Danush-Aries/promptdiff/ci.yml?branch=main&label=CI&color=E8A24C&style=flat-square&logo=github)](https://github.com/Danush-Aries/promptdiff/actions) |
+| **[computer-use-agent](https://github.com/Danush-Aries/computer-use-agent)** | Claude driving a Docker VM/Screenshot→plan→act loop. | — |
+| **[mcp-sentinel](https://github.com/Danush-Aries/mcp-sentinel)** | Static security linter for MCP ecosystems. | [![CI](https://img.shields.io/github/actions/workflow/status/Danush-Aries/mcp-sentinel/ci.yml?branch=main&label=CI&color=E8A24C&style=flat-square&logo=github)](https://github.com/Danush-Aries/mcp-sentinel/actions) |
+| **[sast-scanner](https://github.com/Danush-Aries/sast-scanner)** | Multi-language static analysis + SARIF. | [![CI](https://img.shields.io/github/actions/workflow/status/Danush-Aries/sast-scanner/ci.yml?branch=main&label=CI&color=E8A24C&style=flat-square&logo=github)](https://github.com/Danush-Aries/sast-scanner/actions) |
 
 More on the [repositories tab](https://github.com/Danush-Aries?tab=repositories) — SAST scanner, prompt-injection lab, leak monitors, agent frameworks, edge-AI robotics, and a curated [Claude Code skills collection](https://github.com/Danush-Aries/claude-code-skills).
 
