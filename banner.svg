@@ -1,0 +1,50 @@
+<svg width="1280" height="360" viewBox="0 0 1280 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="1280" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8A24C"/>
+      <stop offset="1" stop-color="#f5c77e"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#30363d" stroke-opacity="0.35" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.9" cy="0.8" r="0.6">
+      <stop stop-color="#E8A24C" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#E8A24C" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="360" fill="url(#bg)"/>
+  <rect width="1280" height="360" fill="url(#pattern)"/>
+  <rect width="1280" height="360" fill="url(#glow)"/>
+  <path d="M0 330 C200 300, 400 345, 640 325 S1080 295, 1280 320 L1280 360 L0 360 Z" fill="#1c2128"/>
+  <path d="M0 342 C220 320, 460 355, 700 338 S1120 315, 1280 342 L1280 360 L0 360 Z" fill="#0d1117"/>
+
+  <!-- neural circuit motif -->
+  <g stroke="#E8A24C" stroke-width="1.6" stroke-linecap="round" opacity="0.85">
+    <path d="M1010 60 L1010 100 L1070 100 L1070 150"/>
+    <circle cx="1010" cy="100" r="4" fill="#E8A24C"/>
+    <circle cx="1070" cy="100" r="4" fill="#E8A24C"/>
+  </g>
+  <g stroke="#E8A24C" stroke-width="1.6" stroke-linecap="round" opacity="0.6">
+    <path d="M1150 40 L1150 70 L1210 70 L1210 120"/>
+    <circle cx="1150" cy="70" r="3" fill="#E8A24C"/>
+    <circle cx="1210" cy="70" r="3" fill="#E8A24C"/>
+  </g>
+  <g stroke="#E8A24C" stroke-width="1.4" stroke-linecap="round" opacity="0.4">
+    <path d="M1010 230 L1010 260 L940 260"/>
+    <circle cx="940" cy="260" r="3" fill="none"/>
+  </g>
+  <g stroke="#8b949e" stroke-width="0.7" opacity="0.5">
+    <path d="M160 80 Q 190 66 220 80 T 280 80 M160 100 Q 190 86 220 100 T 280 100"/>
+  </g>
+
+  <text x="104" y="150" font-family="'Segoe UI', -apple-system, sans-serif" font-size="17" fill="#8b949e" letter-spacing="4">HELLO, I AM</text>
+  <text x="102" y="218" font-family="'Segoe UI', -apple-system, sans-serif" font-size="64" font-weight="800" fill="url(#amber)" letter-spacing="-1">Dhanush Shankar</text>
+  <text x="105" y="258" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="22" fill="#e6edf3">AI &amp; Security Engineer  Python  LLM  MCP</text>
+  <text x="105" y="294" font-family="'Segoe UI', -apple-system, sans-serif" font-size="17" fill="#8b949e">I build the AI. I break the AI. I ship with the AI.  60+ open-source repos  open to AI/ML  Cyber  SDE</text>
+
+  <rect x="104" y="80" width="56" height="4" rx="2" fill="url(#amber)"/>
+</svg>
