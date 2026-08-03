@@ -19,7 +19,6 @@ jobs:
           base_indepth: yes
           repositories_affiliations: owner
           config_timezone: Asia/Kolkata
-          config_theme: base
           config_display: regular
           config_order: base.header, base.activity, base.community, plugin.isocalendar, plugin.languages, plugin.reactions, plugin.habits, plugin.people, plugin.code, plugin.followup, plugin.stars, plugin.stargazers
           plugin_isocalendar: yes
@@ -53,9 +52,7 @@ jobs:
           plugin_stars_limit: 8
           plugin_stargazers: yes
           plugin_stargazers_charts: yes
-          plugin_stargazers_timeline_limit: 20
           plugin_lines: yes
-          plugin_license: yes
 
       # ---- 2: ACHIEVEMENTS UNLOCKED card ----
       - uses: lowlighter/metrics@latest
