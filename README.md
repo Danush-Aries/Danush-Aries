@@ -13,7 +13,8 @@
 <br />
 
 [![License](https://img.shields.io/github/license/Danush-Aries/Danush-Aries?style=flat-square&color=E8A24C)](LICENSE)
-[![Repos](https://img.shields.io/badge/60%2B%20open--source%20repos-0d1117?style=flat-square&color=0d1117&labelColor=30363d)](https://github.com/Danush-Aries?tab=repositories)
+[![Repos](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FDanush-Aries&query=public_repos&label=repos&color=0d1117&labelColor=30363d&style=flat-square)](https://github.com/Danush-Aries?tab=repositories)
+[![Followers](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FDanush-Aries&query=followers&label=followers&color=0d1117&labelColor=30363d&style=flat-square)](https://github.com/Danush-Aries?tab=followers)
 [![Python](https://img.shields.io/badge/Python-3.12-0d1117?style=flat-square&labelColor=30363d)](https://github.com/Danush-Aries?tab=repositories)
 [![MCP](https://img.shields.io/badge/Model%20Context%20Protocol-shipping-0d1117?style=flat-square&color=0d1117&labelColor=30363d)](https://github.com/Danush-Aries?tab=repositories)
 [![EC-Council](https://img.shields.io/badge/EC--Council%20EHE-certified-0d1117?style=flat-square&color=0d1117&labelColor=30363d)](https://www.eccouncil.org)
