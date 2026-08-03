@@ -75,8 +75,7 @@ jobs:
           plugin_stargazers: yes
           plugin_stargazers_charts: yes
           plugin_stargazers_charts_type: last
-          plugin_stargazers_charts_duration: half-year
-          plugin_stargazers_limit: 8
+          plugin_stargazers_days: 180
 
       # ---- 4: TOPICS / AI+SEC mapping card ----
       - uses: lowlighter/metrics@latest
