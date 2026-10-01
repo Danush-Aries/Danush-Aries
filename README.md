@@ -40,7 +40,7 @@
 
 ```
 > whoami
-final-year B.Tech CSE · designing agents that act on the real world: read files, drive
+B.Tech CSE 2026 graduate · designing agents that act on the real world: read files, drive
 browsers, triage CVEs, run desktops, self-defending LLMs.
 > skills --weapons
 [Claude Agent SDK] [MCP] [Ollama] [LangChain] [RAG] [Burp] [Nmap] [Metasploit] [Shodan] [Kali]
