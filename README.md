@@ -28,7 +28,6 @@
 [![License](https://img.shields.io/badge/LIC-MIT-0d1117?style=flat-square&labelColor=E8A24C&color=0d1117)](LICENSE)
 [![Repos](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FDanush-Aries&query=public_repos&label=REPOS&color=0d1117&labelColor=E8A24C&style=flat-square)](https://github.com/Danush-Aries?tab=repositories)
 [![Followers](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FDanush-Aries&query=followers&label=FOLLOWERS&color=0d1117&labelColor=E8A24C&style=flat-square)](https://github.com/Danush-Aries?tab=followers)
-[![Views](https://komarev.com/ghpvc/?username=Danush-Aries&color=E8A24C&abbreviated=true&style=flat-square&label=TRACES)](https://github.com/Danush-Aries)
 [![Python](https://img.shields.io/badge/PY-3.12-0d1117?style=flat-square&labelColor=E8A24C)](https://github.com/Danush-Aries?tab=repositories)
 [![MCP](https://img.shields.io/badge/MCP-SHIPPING-0d1117?style=flat-square&labelColor=E8A24C)](https://github.com/Danush-Aries?tab=repositories)
 [![EHE](https://img.shields.io/badge/EC--C_EHE-0d1117?style=flat-square&labelColor=E8A24C)](https://www.eccouncil.org)
@@ -48,8 +47,10 @@ browsers, triage CVEs, run desktops, self-defending LLMs.
 > status --targets
 internships & entry-level  ▸  AI/ML · LLM & Agent Engineering · AI Security/Red Team · Full-Stack
 > mail --contact
-danushankar3@gmail.com   [LinkedIn](https://linkedin.com/in/dhanush-shankar-u)   [X](https://x.com/danushankar3)   [HackerRank](https://hackerrank.com/danushankar3)
+danushankar3@gmail.com  ·  linkedin.com/in/dhanush-shankar-u  ·  x.com/danushankar3  ·  hackerrank.com/danushankar3
 ```
+
+<p align="center"><a href="https://danush-aries.github.io/Danush-Aries/"><b>▶ Open my Matrix profile page</b></a> · <a href="https://linkedin.com/in/dhanush-shankar-u">LinkedIn</a> · <a href="mailto:danushankar3@gmail.com">Email</a></p>
 
 ---
 
