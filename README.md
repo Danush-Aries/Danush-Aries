@@ -72,8 +72,6 @@ class Dhanush:
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Danush-Aries/Danush-Aries/main/github-metrics.svg" alt="GitHub metrics" />
-
 <img src="https://raw.githubusercontent.com/Danush-Aries/Danush-Aries/output/github-contribution-grid-snake-dark.svg" alt="Contribution snake" />
 
 </div>
