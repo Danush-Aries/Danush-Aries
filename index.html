@@ -4,80 +4,307 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dhanush Shankar · AI & Security Engineer</title>
-<meta name="description" content="Dhanush Shankar — AI & Security Engineer. B.Tech CSE 2026. Open to AI/ML, Cybersecurity and SDE roles.">
+<meta name="description" content="I build AI agents, then try to break them. B.Tech CSE 2026 graduate, open to AI/ML, cybersecurity and software roles.">
+<meta property="og:title" content="Dhanush Shankar · AI & Security Engineer">
+<meta property="og:description" content="I build AI agents, then try to break them.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;400;600;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root { --green: #00ff66; --dim: #00aa44; --bg: #000; --text: #c8ffd8; }
+  :root {
+    --bg: #020a06; --panel: #061510; --line: #12352a;
+    --green: #39ff88; --cyan: #5ee7ff; --red: #ff4d6d;
+    --text: #d7ffe6; --muted: #7fae96;
+    --mono: "Martian Mono", ui-monospace, Consolas, monospace;
+    --sans: "Instrument Sans", system-ui, sans-serif;
+  }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  html, body { background: var(--bg); color: var(--text); font-family: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace; }
-  canvas { position: fixed; inset: 0; z-index: 0; opacity: .35; }
-  main { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; padding: 56px 16px 72px; }
-  .panel { background: rgba(0, 12, 4, .82); border: 1px solid var(--dim); border-radius: 6px; padding: 28px; box-shadow: 0 0 24px rgba(0, 255, 102, .15); }
-  .prompt { color: var(--dim); }
-  h1 { color: var(--green); font-size: clamp(28px, 6vw, 48px); text-shadow: 0 0 12px rgba(0, 255, 102, .6); margin: 8px 0; }
-  .role { font-size: 16px; margin-bottom: 18px; }
-  .cursor { display: inline-block; width: .6em; background: var(--green); animation: blink 1s steps(1) infinite; }
-  @keyframes blink { 50% { opacity: 0; } }
-  h2 { color: var(--green); font-size: 15px; margin: 26px 0 10px; letter-spacing: .08em; }
-  ul { list-style: none; }
-  li { padding: 6px 0; border-bottom: 1px dashed rgba(0, 170, 68, .3); line-height: 1.5; }
-  li:last-child { border-bottom: 0; }
-  a { color: var(--green); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .tags span { display: inline-block; border: 1px solid var(--dim); border-radius: 3px; padding: 2px 8px; margin: 3px 4px 3px 0; font-size: 13px; }
-  .links a { margin-right: 18px; }
-  @media (prefers-reduced-motion: reduce) { canvas { display: none; } .cursor { animation: none; } }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--text); font: 17px/1.6 var(--sans); }
+  canvas#rain { position: fixed; inset: 0; z-index: 0; opacity: .16; pointer-events: none; }
+  .wrap { position: relative; z-index: 1; max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+  a { color: var(--green); }
+  a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+
+  nav { display: flex; justify-content: space-between; align-items: center; padding: 22px 0; font: 400 13px var(--mono); }
+  nav .handle { color: var(--muted); }
+  nav ul { display: flex; gap: 22px; list-style: none; }
+  nav a { color: var(--text); text-decoration: none; }
+  nav a:hover { color: var(--green); }
+
+  /* hero */
+  .hero { display: grid; grid-template-columns: 1.05fr 1fr; gap: 48px; align-items: center; padding: 56px 0 88px; }
+  h1 { font: 800 clamp(44px, 7vw, 84px)/1 var(--mono); letter-spacing: -.04em; color: var(--green);
+       text-shadow: 0 0 28px rgba(57,255,136,.35); }
+  h1 span { display: block; color: var(--text); text-shadow: none; }
+  .pitch { font-size: clamp(20px, 2.4vw, 26px); line-height: 1.35; margin: 26px 0 14px; max-width: 30ch; }
+  .sub { color: var(--muted); max-width: 46ch; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+  .btn { font: 600 14px var(--mono); padding: 13px 20px; border-radius: 4px; text-decoration: none; border: 1px solid var(--green); }
+  .btn.solid { background: var(--green); color: var(--bg); }
+  .btn.ghost { color: var(--green); }
+  .btn:hover { box-shadow: 0 0 22px rgba(57,255,136,.35); }
+
+  /* terminal */
+  .term { background: rgba(3,14,9,.92); border: 1px solid var(--line); border-radius: 10px; overflow: hidden;
+          box-shadow: 0 0 0 1px rgba(57,255,136,.08), 0 30px 80px rgba(0,0,0,.6); font: 400 13px/1.65 var(--mono); }
+  .term-bar { display: flex; gap: 7px; padding: 11px 14px; border-bottom: 1px solid var(--line); align-items: center; }
+  .term-bar i { width: 11px; height: 11px; border-radius: 50%; background: #1d3b2f; }
+  .term-bar i:first-child { background: var(--red); } .term-bar i:nth-child(2) { background: #ffd166; } .term-bar i:nth-child(3) { background: var(--green); }
+  .term-bar span { margin-left: 10px; color: var(--muted); font-size: 12px; }
+  #out { height: 300px; overflow-y: auto; padding: 16px 18px 6px; white-space: pre-wrap; }
+  #out .cmd { color: var(--cyan); } #out .err { color: var(--red); } #out .ok { color: var(--green); }
+  #out a { color: var(--green); }
+  .prompt { display: flex; gap: 8px; padding: 6px 18px 16px; color: var(--green); }
+  .prompt input { flex: 1; background: none; border: 0; color: var(--text); font: inherit; caret-color: var(--green); }
+  .prompt input:focus-visible { outline: none; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 10px 14px; border-top: 1px solid var(--line); }
+  .chips button { font: 400 12px var(--mono); color: var(--muted); background: none; border: 1px solid var(--line); border-radius: 3px; padding: 4px 9px; cursor: pointer; }
+  .chips button:hover { color: var(--green); border-color: var(--green); }
+
+  /* stats strip */
+  .strip { display: flex; flex-wrap: wrap; gap: 14px 48px; padding: 22px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-family: var(--mono); }
+  .strip b { display: block; font-size: 28px; font-weight: 600; color: var(--text); }
+  .strip span { font-size: 12px; color: var(--muted); }
+
+  section { padding: 96px 0 0; }
+  h2 { font: 600 clamp(26px, 3.4vw, 38px)/1.15 var(--mono); letter-spacing: -.02em; margin-bottom: 12px; }
+  .lead { color: var(--muted); max-width: 60ch; margin-bottom: 40px; }
+
+  /* build / break */
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  .col { padding: 30px 28px 18px; background: rgba(6,21,16,.75); }
+  .col + .col { border-left: 1px solid var(--line); }
+  .col h3 { font: 800 22px var(--mono); margin-bottom: 4px; }
+  .col.build h3 { color: var(--cyan); } .col.break h3 { color: var(--red); }
+  .col > p { color: var(--muted); font-size: 15px; margin-bottom: 18px; }
+  .proj { display: block; padding: 15px 0; border-top: 1px dashed var(--line); text-decoration: none; color: inherit; }
+  .proj:hover .pn { text-decoration: underline; }
+  .pn { font: 600 15px var(--mono); }
+  .build .pn { color: var(--cyan); } .break .pn { color: var(--red); }
+  .pd { font-size: 15px; color: var(--text); opacity: .88; margin-top: 2px; }
+  .pm { font: 400 11px var(--mono); color: var(--muted); margin-top: 6px; }
+
+  /* skills */
+  .skills { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+  .skills h3 { font: 600 14px var(--mono); color: var(--green); margin-bottom: 10px; }
+  .skills ul { list-style: none; color: var(--text); font-size: 15px; }
+  .skills li { padding: 3px 0; }
+
+  /* path */
+  .path { list-style: none; border-left: 2px solid var(--line); margin-left: 6px; }
+  .path li { position: relative; padding: 0 0 30px 28px; }
+  .path li::before { content: ""; position: absolute; left: -7px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--green); }
+  .path .when { font: 400 12px var(--mono); color: var(--muted); }
+  .path .what { font-weight: 600; font-size: 18px; }
+  .path .where { color: var(--muted); font-size: 15px; }
+
+  /* contact */
+  .contact { padding: 110px 0 60px; }
+  .mail { display: inline-block; font: 800 clamp(22px, 4.6vw, 52px)/1.1 var(--mono); color: var(--green); text-decoration: none; letter-spacing: -.03em; word-break: break-all; margin: 14px 0 26px; }
+  .mail:hover { text-shadow: 0 0 26px rgba(57,255,136,.5); }
+  footer { padding: 30px 0 40px; border-top: 1px solid var(--line); color: var(--muted); font: 400 12px var(--mono); }
+
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; padding-top: 28px; }
+    .split { grid-template-columns: 1fr; }
+    .col + .col { border-left: 0; border-top: 1px solid var(--line); }
+    .skills { grid-template-columns: 1fr 1fr; }
+    nav ul { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) { canvas#rain { display: none; } html { scroll-behavior: auto; } }
 </style>
 </head>
 <body>
 <canvas id="rain" aria-hidden="true"></canvas>
-<main>
-  <div class="panel">
-    <div class="prompt">&gt; whoami</div>
-    <h1>Dhanush Shankar</h1>
-    <p class="role">AI &amp; Security Engineer · B.Tech CSE 2026 · Bengaluru <span class="cursor">&nbsp;</span></p>
-    <p>I build AI tools and test how secure they are. Open to internships and entry-level roles in AI/ML, Cybersecurity and Software Development.</p>
-
-    <h2>&gt; ls ./projects</h2>
+<div class="wrap">
+  <nav>
+    <span class="handle">~/danush-aries</span>
     <ul>
-      <li><a href="https://github.com/Danush-Aries/praetor">praetor</a> — automated pentest orchestrator with a hard scope gate and full audit trail</li>
-      <li><a href="https://github.com/Danush-Aries/prompt-injection-lab">prompt-injection-lab</a> — offline lab to attack and defend AI agents</li>
-      <li><a href="https://github.com/Danush-Aries/mcp-sentinel">mcp-sentinel</a> — static security linter for MCP configs and tool manifests</li>
-      <li><a href="https://github.com/Danush-Aries/jarvis">jarvis</a> — multi-provider AI assistant: voice, web and CLI</li>
-      <li><a href="https://github.com/Danush-Aries/cve-advisor">cve-advisor</a> — LLM-driven CVE triage over NVD and Exploit-DB</li>
-      <li><a href="https://github.com/Danush-Aries/customer-support-agent">customer-support-agent</a> — RAG support chat with streaming and mood detection</li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#path">Path</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
+  </nav>
 
-    <h2>&gt; cat skills.txt</h2>
-    <div class="tags">
-      <span>Python</span><span>TypeScript</span><span>React</span><span>FastAPI</span><span>SQL</span><span>Docker</span><span>Linux</span>
-      <span>LLMs</span><span>RAG</span><span>MCP</span><span>Burp Suite</span><span>Nmap</span><span>Web App Security</span>
+  <header class="hero">
+    <div>
+      <h1>Dhanush<span>Shankar</span></h1>
+      <p class="pitch">I build AI agents, then try to break them.</p>
+      <p class="sub">AI &amp; security engineer from Bengaluru. B.Tech CSE, GITAM University, class of 2026. Looking for internships and entry-level roles in AI/ML, cybersecurity and software development.</p>
+      <div class="cta">
+        <a class="btn solid" href="#contact">Get in touch</a>
+        <a class="btn ghost" href="https://github.com/Danush-Aries">See my GitHub</a>
+      </div>
     </div>
 
-    <h2>&gt; contact</h2>
-    <p class="links">
-      <a href="https://github.com/Danush-Aries">GitHub</a>
-      <a href="https://linkedin.com/in/dhanush-shankar-u">LinkedIn</a>
-      <a href="mailto:danushankar3@gmail.com">Email</a>
-    </p>
+    <div class="term" aria-label="Interactive terminal">
+      <div class="term-bar"><i></i><i></i><i></i><span>guest@danush: ~</span></div>
+      <div id="out" aria-live="polite"></div>
+      <form class="prompt" id="form">
+        <label for="cmd">$</label>
+        <input id="cmd" autocomplete="off" spellcheck="false" placeholder="type help">
+      </form>
+      <div class="chips" aria-label="Quick commands">
+        <button type="button" data-c="whoami">whoami</button>
+        <button type="button" data-c="projects">projects</button>
+        <button type="button" data-c="skills">skills</button>
+        <button type="button" data-c="hire">hire</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="strip" aria-label="GitHub numbers">
+    <div><b id="s-repos">50+</b><span>public repos</span></div>
+    <div><b id="s-sec">15+</b><span>AI security tools</span></div>
+    <div><b id="s-agents">8</b><span>agent projects</span></div>
+    <div><b>2026</b><span>B.Tech CSE graduate</span></div>
   </div>
-</main>
+
+  <section id="work">
+    <h2>Build and break</h2>
+    <p class="lead">Half my work is shipping AI systems. The other half is attacking them and building the tools that catch those attacks. Every project here is open source.</p>
+    <div class="split">
+      <div class="col build">
+        <h3>Build</h3>
+        <p>Agents and apps that act in the real world.</p>
+        <div id="build-list"></div>
+      </div>
+      <div class="col break">
+        <h3>Break &amp; defend</h3>
+        <p>Red-team labs, scanners and linters for AI and code.</p>
+        <div id="break-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>What I work with</h2>
+    <p class="lead">The tools I reach for, grouped by what I use them for.</p>
+    <div class="skills">
+      <div><h3>Languages</h3><ul><li>Python</li><li>TypeScript</li><li>JavaScript</li><li>SQL</li><li>Bash</li></ul></div>
+      <div><h3>AI &amp; LLMs</h3><ul><li>Claude API &amp; Agent SDK</li><li>Model Context Protocol</li><li>RAG pipelines</li><li>Ollama &amp; local models</li><li>Prompt evaluation</li></ul></div>
+      <div><h3>Security</h3><ul><li>Burp Suite</li><li>Nmap</li><li>Metasploit</li><li>SAST &amp; SARIF</li><li>OWASP LLM Top 10</li></ul></div>
+      <div><h3>Engineering</h3><ul><li>FastAPI</li><li>React &amp; Next.js</li><li>Docker</li><li>GitHub Actions</li><li>Linux</li></ul></div>
+    </div>
+  </section>
+
+  <section id="path">
+    <h2>How I got here</h2>
+    <p class="lead">Education and certifications, oldest first.</p>
+    <ol class="path">
+      <li><div class="when">2022 – 2026</div><div class="what">B.Tech, Computer Science &amp; Engineering</div><div class="where">GITAM University</div></li>
+      <li><div class="when">Certification</div><div class="what">Ethical Hacking Essentials (EHE)</div><div class="where">EC-Council</div></li>
+      <li><div class="when">Certification</div><div class="what">Networking &amp; Ethical Hacking</div><div class="where">Cisco Networking Academy</div></li>
+      <li><div class="when">Ongoing</div><div class="what">Hands-on labs</div><div class="where">TryHackMe, HackTheBox and PortSwigger Web Security Academy</div></li>
+    </ol>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Hiring for AI or security?</h2>
+    <p class="lead">I reply to every message. Email is fastest.</p>
+    <a class="mail" href="mailto:danushankar3@gmail.com">danushankar3@gmail.com</a>
+    <div class="cta">
+      <a class="btn solid" href="https://linkedin.com/in/dhanush-shankar-u">Message me on LinkedIn</a>
+      <a class="btn ghost" href="https://github.com/Danush-Aries">Follow on GitHub</a>
+    </div>
+  </section>
+
+  <footer>Built by hand with HTML, CSS and a little JavaScript. Hosted on GitHub Pages.</footer>
+</div>
+
 <script>
+const GH = 'https://github.com/Danush-Aries/';
+const BUILD = [
+  ['jarvis', 'Multi-provider AI assistant with voice, web and command-line versions.', 'Python'],
+  ['agent-os', 'A runtime for cooperating agents: scheduler, memory, tools and guardrails.', 'Python'],
+  ['computer-use-agent', 'Claude controlling a sandboxed Linux desktop through screenshots and clicks.', 'Python'],
+  ['browser-automation-agent', 'An agent that browses the web with Playwright and a Streamlit UI.', 'Python'],
+  ['customer-support-agent', 'Support chat that answers from a knowledge base with RAG and streams replies.', 'TypeScript'],
+  ['promptdiff', 'pytest for prompts: catches when a model or prompt change breaks outputs.', 'Python'],
+  ['route-arena', 'A typed LLM router that scores models and picks the right one per request.', 'Python'],
+  ['tokenwatch', 'Self-hosted proxy and dashboard that tracks what every LLM call costs.', 'Python'],
+];
+const BREAK = [
+  ['praetor', 'Automated pentest orchestrator with a hard scope gate and a full audit trail.', 'Python'],
+  ['prompt-injection-lab', 'Offline lab: exploit an AI agent, then defend it. No API key needed.', 'Python'],
+  ['mcp-sentinel', 'Security linter for MCP configs: tool poisoning, secrets, supply-chain risk.', 'Python'],
+  ['injectsweep', 'Catches prompt-injection payloads hidden in documents before RAG ingests them.', 'Python'],
+  ['tracewarden', 'Scans recorded agent tool calls for injection, exfiltration and RCE patterns.', 'Python'],
+  ['leakprobe', 'Tests how easily a model leaks its system prompt, across 42 attacks.', 'Python'],
+  ['cve-advisor', 'LLM-assisted CVE triage over NVD and Exploit-DB.', 'Python'],
+  ['envsentry', 'Context-aware secret scanner with a pre-commit guard.', 'Python'],
+];
+function list(id, items) {
+  document.getElementById(id).innerHTML = items.map(([n, d, l]) =>
+    `<a class="proj" href="${GH}${n}"><div class="pn">${n}</div><div class="pd">${d}</div><div class="pm" data-r="${n}">${l}</div></a>`).join('');
+}
+list('build-list', BUILD); list('break-list', BREAK);
+
+// live numbers from the GitHub API (falls back to static text if rate-limited)
+fetch('https://api.github.com/users/Danush-Aries').then(r => r.ok && r.json()).then(u => {
+  if (u && u.public_repos) document.getElementById('s-repos').textContent = u.public_repos;
+}).catch(() => {});
+fetch('https://api.github.com/users/Danush-Aries/repos?per_page=100').then(r => r.ok && r.json()).then(rs => {
+  if (!Array.isArray(rs)) return;
+  rs.forEach(r => document.querySelectorAll(`[data-r="${r.name}"]`).forEach(el => {
+    const bits = [r.language || el.textContent];
+    if (r.stargazers_count) bits.push(`★ ${r.stargazers_count}`);
+    bits.push('updated ' + new Date(r.pushed_at).toLocaleDateString('en-GB', { month: 'short', year: 'numeric' }));
+    el.textContent = bits.join('   ');
+  }));
+}).catch(() => {});
+
+// terminal
+const out = document.getElementById('out'), input = document.getElementById('cmd');
+const link = (u, t) => `<a href="${u}">${t || u}</a>`;
+const CMDS = {
+  help: () => 'commands: whoami, projects, skills, education, contact, hire, github, clear',
+  whoami: () => 'Dhanush Shankar\nAI & security engineer · B.Tech CSE 2026 · Bengaluru\nI build AI agents, then try to break them.',
+  projects: () => 'build:  ' + BUILD.slice(0, 4).map(p => link(GH + p[0], p[0])).join('  ') +
+                  '\nbreak:  ' + BREAK.slice(0, 4).map(p => link(GH + p[0], p[0])).join('  ') + '\n(scroll down for all of them)',
+  skills: () => 'python  typescript  fastapi  react  sql  docker\nclaude-api  mcp  rag  ollama\nburp  nmap  metasploit  sast',
+  education: () => 'B.Tech CSE, GITAM University (2022–2026)\nEC-Council EHE · Cisco Networking & Ethical Hacking',
+  contact: () => link('mailto:danushankar3@gmail.com', 'danushankar3@gmail.com') + '\n' + link('https://linkedin.com/in/dhanush-shankar-u', 'linkedin.com/in/dhanush-shankar-u'),
+  hire: () => '<span class="ok">[+] candidate available: internships & entry-level roles</span>\nemail ' + link('mailto:danushankar3@gmail.com?subject=Opportunity%20for%20Dhanush', 'danushankar3@gmail.com') + ' and I will reply fast.',
+  github: () => { window.open(GH, '_blank', 'noopener'); return 'opening github.com/Danush-Aries'; },
+  sudo: () => '<span class="err">nice try. this terminal is read-only.</span>',
+  clear: () => { out.innerHTML = ''; return null; },
+};
+function run(raw) {
+  const c = raw.trim().toLowerCase(); if (!c) return;
+  out.insertAdjacentHTML('beforeend', `<div class="cmd">$ ${c.replace(/</g, '&lt;')}</div>`);
+  const fn = CMDS[c.split(' ')[0]];
+  const res = fn ? fn() : `<span class="err">command not found: ${c.replace(/</g, '&lt;')}</span>. try help`;
+  if (res !== null) out.insertAdjacentHTML('beforeend', `<div>${res}</div><br>`);
+  out.scrollTop = out.scrollHeight;
+}
+document.getElementById('form').addEventListener('submit', e => { e.preventDefault(); run(input.value); input.value = ''; });
+document.querySelectorAll('.chips button').forEach(b => b.addEventListener('click', () => run(b.dataset.c)));
+
+// boot sequence: the one orchestrated moment on load
+const boot = ['whoami', 'help'];
+let i = 0;
+(function next() { if (i < boot.length) { run(boot[i++]); setTimeout(next, 700); } })();
+
+// matrix rain, kept faint so it never fights the text
+if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
   const c = document.getElementById('rain'), x = c.getContext('2d');
-  const chars = 'アイウエオカキクケコサシスセソ0123456789ABCDEF<>/{}[]';
-  let cols, drops, size = 16;
-  function resize() {
-    c.width = innerWidth; c.height = innerHeight;
-    cols = Math.floor(c.width / size); drops = Array(cols).fill(1);
-  }
-  function draw() {
-    x.fillStyle = 'rgba(0,0,0,.08)'; x.fillRect(0, 0, c.width, c.height);
-    x.fillStyle = '#00ff66'; x.font = size + 'px monospace';
-    drops.forEach((y, i) => {
-      x.fillText(chars[Math.floor(Math.random() * chars.length)], i * size, y * size);
-      drops[i] = (y * size > c.height && Math.random() > .975) ? 0 : y + 1;
+  const chars = 'アイウエオカキクケコサシスセソ01<>/{}[]$#';
+  let drops = [], size = 16;
+  const resize = () => { c.width = innerWidth; c.height = innerHeight; drops = Array(Math.floor(c.width / size)).fill(1); };
+  addEventListener('resize', resize); resize();
+  setInterval(() => {
+    x.fillStyle = 'rgba(2,10,6,.1)'; x.fillRect(0, 0, c.width, c.height);
+    x.font = size + 'px monospace';
+    drops.forEach((y, k) => {
+      x.fillStyle = Math.random() > .97 ? '#5ee7ff' : '#39ff88';
+      x.fillText(chars[Math.floor(Math.random() * chars.length)], k * size, y * size);
+      drops[k] = (y * size > c.height && Math.random() > .975) ? 0 : y + 1;
     });
-  }
-  addEventListener('resize', resize); resize(); setInterval(draw, 50);
+  }, 55);
+}
 </script>
 </body>
 </html>
