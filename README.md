@@ -19,7 +19,7 @@
 <div align="center">
 
 <a href="https://github.com/Danush-Aries">
-  <img src="https://readme-typing-svg.demolab.com/?lines=INITIALIZING+HACKER+MODULE...;I+build+the+AI.+I+break+the+AI.+I+ship+with+the+AI.;60%2B+open-source+repos+deployed;Open+to+AI%2FML+%C2%B7+Cyber+%C2%B7+SDE+roles&font=JetBrains+Mono&size=17&pause=1200&color=E8A24C&center=true&vCenter=true&width=720&height=40" alt="typed tagline" />
+  <img src="https://readme-typing-svg.demolab.com/?lines=INITIALIZING+HACKER+MODULE...;I+build+the+AI.+I+break+the+AI.+I+ship+with+the+AI.;50%2B+open-source+repos+shipped;Open+to+AI%2FML+%C2%B7+Cyber+%C2%B7+SDE+roles&font=JetBrains+Mono&size=17&pause=1200&color=E8A24C&center=true&vCenter=true&width=720&height=40" alt="typed tagline" />
 </a>
 
 <br />
